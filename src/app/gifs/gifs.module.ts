@@ -13,7 +13,10 @@ import { ListGifsComponent } from './components/list-gifs/list-gifs.component';
     ListGifsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+  ],
+  exports: [
+    MainPageComponent,
   ]
 })
 export class GifsModule { }

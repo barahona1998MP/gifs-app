@@ -1,1 +1,7 @@
-<p>aside works!</p>
+<div class="bg-dark border-right p-3" id="aside">
+  <h3 class="text-light">GifsApp</h3>
+  <hr class="text-light">
+  <div class="list-group list-reset">
+    <button *ngFor="let tag of tags" class="list-group-item list-group-item-action">{{tag}}</button>
+  </div>
+</div>

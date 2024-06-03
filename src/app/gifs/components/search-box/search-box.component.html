@@ -1,1 +1,18 @@
-<p>search-box works!</p>
+<h5>Search:</h5>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Search gifs..."
+  #tagInput
+  (keyup.enter)="searchTag()"
+>
+
+<!-- Sin @ViewChild
+  <h5>Search:</h5>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Search gifs..."
+  #tagInput
+  (keyup.enter)="searchBox(tagInput.value)"
+> -->

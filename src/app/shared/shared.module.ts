@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AsideComponent } from './components/aside/aside.component';
+import { GifsModule } from '../gifs/gifs.module';
 
 
 
@@ -9,7 +10,11 @@ import { AsideComponent } from './components/aside/aside.component';
     AsideComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
+  ],
+  exports: [
+    AsideComponent,
   ]
 })
 export class SharedModule { }
