@@ -9,8 +9,12 @@ import { GifsService } from '../../../gifs/services/gifs.service';
 export class AsideComponent {
   constructor(private gifsService: GifsService) {}
 
-  get tags() {
+  get tags(): string[] {
     return this.gifsService.tagsHistory
+  }
+
+  public searchTag(tag:string):void {
+    this.gifsService.searchTag(tag)
   }
 
 }
